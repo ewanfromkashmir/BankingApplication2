@@ -10,13 +10,18 @@ namespace AcmeBanking
     {
         public static void DisplayPrompt(string prompt)
         {
-            Console.Write(prompt);
+            Console.Write($"\n{prompt}");
 
+        }
+
+        public static void DisplayMessage(string message)
+        {
+            Console.WriteLine(message);
         }
 
         public static void DisplayWarning(string warning)
         {
-            Console.WriteLine(warning);
+            Console.WriteLine($"{warning}\n");
         }
 
         public static void DisplayResult(double result)
