@@ -1,4 +1,4 @@
-﻿using AcmeBanking;
+﻿using AcmeBanking.UI;
 
 internal class Program
 {

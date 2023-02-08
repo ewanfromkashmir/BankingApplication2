@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AcmeBanking.Control;
 
-namespace AcmeBanking
+namespace AcmeBanking.UI
 {
     public class Menus
     {
@@ -13,7 +14,7 @@ namespace AcmeBanking
             Display.DisplayMessage("Welcome to Acme Banking Solutions.");
             Display.DisplayPrompt("Does the customer currently have an account with us? \n1. Yes \n2. No\n\n");
 
-            switch(InputObtainer.ObtainMenuSelection(2))
+            switch (InputObtainer.ObtainMenuSelection(2))
             {
                 case 1: { ExistingCustomersMenu(); break; }
                 case 2: { AccountCreationMenu(); break; }
@@ -24,7 +25,7 @@ namespace AcmeBanking
         {
             Display.DisplayPrompt("Would the customer like to access an existing account or open a new account? \n1. Access existing account \n2. Open new account\n\n");
 
-            switch(InputObtainer.ObtainMenuSelection(2))
+            switch (InputObtainer.ObtainMenuSelection(2))
             {
                 case 1: { ExistingAccountsMenu(); break; }
                 case 2: { AccountCreationMenu(); break; }
@@ -50,6 +51,6 @@ namespace AcmeBanking
             Display.DisplayPrompt("Enter customer account number: ");
         }
 
-        
+
     }
 }
