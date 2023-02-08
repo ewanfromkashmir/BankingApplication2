@@ -7,7 +7,7 @@ using AcmeBanking.Interfaces;
 
 namespace AcmeBanking.Accounts
 {
-    internal class IsaAccount : BaseAccount, IPaysInterest, ILimitsBalance
+    class IsaAccount : BaseAccount, IPaysInterest, ILimitsBalance
     {
         public IsaAccount(string accountNumber, string sortCode, float balance, float overdraftAmount) : base(accountNumber, sortCode, balance, overdraftAmount) { }
 

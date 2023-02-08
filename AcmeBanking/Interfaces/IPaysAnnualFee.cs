@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcmeBanking.Interfaces
 {
-    internal interface IPaysAnnualFee
+    interface IPaysAnnualFee
     {
 
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcmeBanking.UI
 {
-    public class Display
+    class Display
     {
         public static void DisplayPrompt(string prompt)
         {

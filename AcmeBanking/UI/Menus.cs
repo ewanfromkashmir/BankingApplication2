@@ -7,7 +7,7 @@ using AcmeBanking.Control;
 
 namespace AcmeBanking.UI
 {
-    public class Menus
+    static class Menus
     {
         public static void MainMenu()
         {

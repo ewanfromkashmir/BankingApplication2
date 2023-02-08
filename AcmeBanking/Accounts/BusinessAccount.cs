@@ -7,7 +7,7 @@ using AcmeBanking.Interfaces;
 
 namespace AcmeBanking.Accounts
 {
-    internal class BusinessAccount : BaseAccount, IPaysAnnualFee
+    class BusinessAccount : BaseAccount, IPaysAnnualFee
     {
         private string BusinessName { get; set; }
 

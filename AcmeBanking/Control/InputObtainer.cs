@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AcmeBanking.Control
 {
-    public class InputObtainer
+    static class InputObtainer
     {
         private static string ObtainUserInput()
         {

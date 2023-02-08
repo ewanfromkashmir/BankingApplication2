@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcmeBanking.Interfaces
 {
-    internal abstract class BaseAccount : IAccount
+    abstract class BaseAccount : IAccount
     {
         public string AccountNumber { get; set; }
         public string SortCode { get; set; } = "02-12-20";

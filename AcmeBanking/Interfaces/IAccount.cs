@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcmeBanking.Interfaces
 {
-    internal interface IAccount
+    interface IAccount
     {
         public string AccountNumber { get; set; }
         public string SortCode { get; set; }
