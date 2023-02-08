@@ -34,6 +34,19 @@ namespace AcmeBanking
             return inputDouble;
         }
 
+        public static double ObtainInputDouble(double minimum, double maximum)
+        {
+            double inputDouble = ObtainInputDouble();
+
+            while (inputDouble < minimum || inputDouble > maximum)
+            {
+                Display.DisplayWarning("Input range exceeded. Please try again.");
+                inputDouble = ObtainInputDouble();
+            }
+
+            return inputDouble;
+        }
+
         public static int ObtainInputInteger()
         {
             int inputInteger;
@@ -41,6 +54,19 @@ namespace AcmeBanking
             while (!int.TryParse(ObtainUserInput(), out inputInteger))
             {
                 Display.DisplayWarning("Unrecognised input. Please try again.");
+            }
+
+            return inputInteger;
+        }
+
+        public static int ObtainInputInteger(int minimum, int maximum)
+        {
+            int inputInteger = ObtainInputInteger();
+
+            while (inputInteger < minimum || inputInteger > maximum)
+            {
+                Display.DisplayWarning("Input range exceeded. Please try again.");
+                inputInteger = ObtainInputInteger();
             }
 
             return inputInteger;
