@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace AcmeBanking
 {
-    internal class Display
+    public class Display
     {
+        public static void DisplayPrompt(string prompt)
+        {
+            Console.Write(prompt);
+
+        }
+
+        public static void DisplayWarning(string warning)
+        {
+            Console.WriteLine(warning);
+        }
+
+        public static void DisplayResult(double result)
+        {
+            Console.Write("Result: ");
+            Console.WriteLine(result);
+        }
     }
 }
